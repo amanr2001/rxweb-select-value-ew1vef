@@ -1,0 +1,10 @@
+<form [formGroup]="formGroup">
+
+
+
+  <label>Select Company </label>
+  <rx-select enableFreeText="true" [(source)]="companies" formControlName="companyId" 
+  mainClass="form-control"
+    [keyValueProps]="keyProps"></rx-select>
+  <b> Binding Value:</b> {{formGroup.controls.companyId.value}}
+</form>
